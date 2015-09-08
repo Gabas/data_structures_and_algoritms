@@ -1,10 +1,17 @@
 'use strict';
 
 var Array = require('../lib/modify_array_functions');
+var unique = require('../lib/unique.js');
+var frequency2 = require('../lib/frequency2');
 
 var expect = require('chai').expect;
 
 var arr = [1, 2, 3, 4, 5];
+
+var duplicatesArray = [2, 3, 4, 3, 3, 2, 1, 6, 4, 3];
+var noDuplicatesArray = [2, 3, 4, 1, 6];
+
+var wordsArray = ['banana', 'apple', 'grassssssssssspes', 'nanas', 'qwertyu', 'zxbchsbhhhhhhh'];
 
 
 describe("SelfImplemented functions test", function() {
@@ -25,4 +32,16 @@ describe("SelfImplemented functions test", function() {
     expect(5).to.eql(arr.myUnshift(100));
   });
 
+});
+
+describe("Unique function test", function() {
+	it("should delete all duplicates in the given array", function(){
+		expect(noDuplicatesArray).to.eql(unique(duplicatesArray));
+	});
+});
+
+describe("Unique function test", function() {
+	it("should delete all duplicates in the given array", function(){
+		expect('s').to.eql(frequency2(wordsArray));
+	});
 });

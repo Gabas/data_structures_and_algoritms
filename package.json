@@ -1,0 +1,23 @@
+{
+  "name": "data_structures_and_algoritms",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gabas/data_structures_and_algoritms.git"
+  },
+  "author": "Roman Gusev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gabas/data_structures_and_algoritms/issues"
+  },
+  "homepage": "https://github.com/Gabas/data_structures_and_algoritms",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.3.1"
+  }
+}
